@@ -3,7 +3,7 @@ from graphics import *
 from button import Button
 
 
-class Hangman:
+class Structure:
     def __init__(self, win, lowerleft, upperright):
         self.win = win
         self.ll = lowerleft
@@ -67,14 +67,14 @@ class Hangman:
 
 class GUIInterface:
     def __init__(self):
-        self.win = win = GraphWin("HANGMAN", 600, 600)
+        self.win = win = GraphWin("HANGMAN", 300, 300)
         win.setCoords(0,0,10,10)
         self.buttons = []
         self.__createButtons()
-        self.hangman = Hangman(win, Point(2, 4.5), Point(4,9))
+        self.hangman = Structure(win, Point(2, 4.5), Point(4,9))
         self.word = []
-        self.playButton = Button(win, Point(2,1), 1, 0.5, "Play")
-        self.quitButton = Button(win, Point(8,1), 1, 0.5, "Quit")
+        self.playButton = Button(win, Point(2,1), 2, 1, "Play")
+        self.quitButton = Button(win, Point(8,1), 2, 1, "Quit")
         self.text = Text(Point(5, 1.75), "").draw(win)
         self.text.setStyle("bold")
         self.wordText = Text(Point(3,2.75), "").draw(self.win)
