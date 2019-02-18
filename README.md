@@ -14,6 +14,7 @@ any platform where Tkinter is available.
 ## INSTALLATION: 
 Put this graphics.py file somewhere where Python can see it.
 
+![About](images/hangman.mp4)
 ![About](images/hangman1.png)
 ![About](images/hangman2.png)
 ![About](images/hangman3.png)
